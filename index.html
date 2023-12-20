@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-left: 28%;
+            margin-right: 40%;
+            margin-bottom: 20px;
+            border-radius: 3.62px;
+            width: 340.73px;
+            background: #F4FBF9;
+        }
+
+        .left-side {
+            width: 50%;
+        }
+
+        .right-side {
+            width: 50%;
+            text-align: center;
+        }
+
+        .size-color-options {
+            display: none;
+        }
+
+        input[type="radio"]:checked+label+.size-color-options {
+            display: block;
+        }
+
+        h1.newheading {
+            text-align: center;
+        }
+
+        span {
+            margin-left: 27px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button.add-to-cart {
+            width: 380px;
+            margin-left: 28%;
+            background: #007F61;
+            color: #FFFFFF;
+            height: 41px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 19.36px;
+        }
+
+        h1.newheading {
+            font-family: Metropolis !important;
+            font-size: 18.08px;
+            line-height: 18.08px;
+            color: #007F61;
+            font-weight: 500;
+            margin-right: 15%;
+        }
+
+        input[type="radio"] {
+            background-color: #007F61 !important;
+        }
+
+        label {
+            font-size: 14.46px;
+            line-height: 14.46px;
+            font-weight: 400;
+            font-family: Metropolis !important;
+            color: #000000;
+        }
+
+        label.options {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        select {
+            margin-left: 12px;
+        }
+
+        p.offer {
+            font-size: 14.46px;
+            font-family: Metropolis !important;
+            font-weight: 500;
+            line-height: 14.46px;
+            color: #000000;
+            margin-left: 100px;
+        }
+
+        p.mostp {
+            margin-left: 80px;
+            font-size: 12.65px;
+            line-height: 15.31px;
+            color: #007F61;
+            font-weight: 600;
+            font-family: inter;
+        }
+
+        .left-section {
+            display: flex;
+            margin-left: 28%;
+            font-size: 14px;
+            font-family: inter;
+            font-weight: 500;
+            color: #007F61;
+            line-height: 16.94px;
+        }
+
+        .right-section {
+            display: flex;
+            margin-left: 48%;
+            margin-top: -43px;
+            font-size: 14px;
+            line-height: 16.94px;
+            font-family: inter;
+            font-weight: 400;
+            color: #000000;
+        }
+
+        p.no {
+            font-size: 9.04px;
+            font-family: inter;
+            font-weight: 400;
+            line-height: 10.94px;
+            color: #000000;
+        }
+
+        select {
+            width: 65.98px;
+            height: 25.31px;
+            border-radius: 1.81px;
+            border: 0.9px solid #D9D9D9;
+            background-color: #FFFFFF;
+        }
+
+        select.s_c {
+            font-size: 10.85px;
+            line-height: 13.31px;
+            font-family: inter;
+            font-weight: 400;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="newheading">Bundle & Save</h1>
+
+    <div class="container first">
+        <div class="left-side">
+            <input type="radio" id="chooseOption" name="options">
+            <label for="chooseOption">1 Pair <br> <span>DKK 195.00</span></label>
+
+            <div class="size-color-options">
+                <div> <br>
+                    <label class="options">Size</label>
+                    <label class="options">Colour</label>
+                    <p class="no">#1
+                        <select class="s_c">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select class="s_c">
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                        </select>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="no">#2
+                        <select class="s_c">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select class="s_c">
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                        </select>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right-side">
+            <p class="offer">50% OFF</p>
+        </div>
+    </div>
+
+    <div class="container second">
+        <div class="left-side">
+            <input type="radio" id="chooseOption" name="options">
+            <label for="chooseOption">2 Pair <br> <span>DKK 345.00</span></label>
+
+            <div class="size-color-options">
+                <div> <br>
+                    <label class="options">Size</label>
+                    <label class="options">Colour</label>
+                    <p class="no">#1
+                        <select class="s_c">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select class="s_c">
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                        </select>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="no">#2
+                        <select class="s_c">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select class="s_c">
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                        </select>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right-side">
+            <p class="mostp">Most Popular</p>
+            <p class="offer">40% OFF</p>
+        </div>
+    </div>
+
+    <div class="container last">
+        <div class="left-side">
+            <input type="radio" id="chooseOption" name="options">
+            <label for="chooseOption">3 Pair <br> <span>DKK 528.00</span> </label>
+
+            <div class="size-color-options">
+                <div> <br>
+                    <label class="options">Size</label>
+                    <label class="options">Colour</label>
+                    <p class="no">#1
+                        <select class="s_c">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select class="s_c">
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                        </select>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="no">#2
+                        <select class="s_c">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select class="s_c">
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                            <option value="Colour">Colour</option>
+                        </select>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right-side">
+            <p class="offer">60% OFF</p>
+        </div>
+    </div>
+
+
+    <div class="shipping-details">
+        <div class="left-section">
+            <p>Free 2 Day Shipping</p>
+        </div>
+        <div class="right-section">
+            <p>Total: DKK 360.00</p>
+        </div>
+    </div>
+
+    <div class="total-section">
+        <button class="add-to-cart">+ Add to Cart</button>
+    </div>
+    </div>
+
+</body>
+
+</html>
